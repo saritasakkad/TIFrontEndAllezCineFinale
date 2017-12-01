@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+
+    <title>LOGO Movies</title>
+
+</head>
+
+<body>
+
+    <!-- ancrage html -->
+    <!-- <div class="cookie">
+        <p>COOOOOKKKIIIIIIIEEEESSSSSS!!!!!!</p>
+        <a href="#" class="cookieClose">Close</a>
+    </div> -->
+    <h1 id="top"></h1>
+    <div class="header">
+
+        <!-- logo, barre de recherche, bouton login ===> popup formulaire login
+        form login contien: id, password, bouton OK, bouton "créer compte", checkbox "rester connecté", oublié mot de passe?, cancel -->
+        <img src="assets/images/logoMovies.png" alt="logo" id="siteLogo">
+        <input type="search" name="searchBar" id="searchBar" placeholder="Recherche">
+        <input type="button" id="go" value="GO">
+        <i class="fa fa-phone fa-2x" id="phone" aria-hidden="true"></i>
+        <p id="phoneNumber">(+000) 123 345 653</p>
+        <button onclick="document.getElementById('loginPop').style.display='block'" id="login">Login</button>
+        <!-- The Modal -->
+        <div id="loginPop" class="modal">
+            <!-- Modal Content -->
+            <form class="modal-content animate" action="">
+                <h2>Comme au Cinema</h2>
+                <span onclick="document.getElementById('loginPop').style.display='none'" class="close" title="Close Modal">&times;</span>
+                <button type="button" name="facebook" class="somediabtn" style="font-family: FontAwesome" id="fbbtn">&#xf09a; Connection avec FaceBook</button>
+                <br>
+                <button type="button" name="twitter" class="somediabtn" style="font-family: FontAwesome" id="twitbtn">&#xf099; Connection avec Twitter</button>
+                <p class="or">OU</p>
+                <br>
+                <div class="loginform">
+                    <input type="text" placeholder="&#xf003; Votre e-mail" style="font-family: FontAwesome" name="uname" required>
+                    <br>
+                    <br>
+                    <input type="password" placeholder="&#xf023; Mot de Passe" style="font-family: FontAwesome" name="psw" required>
+                    <br>
+                    <br>
+                    <input type="checkbox" checked="checked"> Rester connecté
+                    <br>
+                    <br>
+                </div>
+                <div class="container">
+                    <button type="submit" id="createbtn">Créer Compte</button>
+                    <button type="button" onclick="document.getElementById('loginPop').style.display='none'" id="connectbtn">Me Connecter</button>
+                    <br>
+                    <br>
+                    <span class="psw">Mot de passe <a href="#">oublié?</a></span>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="navbar">
+        <!-- Deux menus dropdown qui menent vers selections films -->
+        <nav id="navigation">
+
+            <ul>
+                <li id="homeBtn">Home</li>
+                <li>
+                    <div class="dropdown">
+                        <button  class="dropbtn"><a href="#fm">Films</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Aventure</a>
+                            <a href="#">Policier</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#st">Series</a></button>
+                        <div class="dropdown-content">
+                            <a href="#">Action</a>
+                            <a href="#">Aventure</a>
+                            <a href="#">Comédie</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#ss">Shop</a></button>
+                        <div class="dropdown-content">
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><a href="#cu">Contact</a></button>
+                        <div class="dropdown-content">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="banner">
+        <!-- Caroussel photos: photo ==> 75% largeur, selection + description ===> 25% largeur -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="assets/images/movieImages/tarzan.jpg" style="width:100%">
+                <div class="carouselText">Il s'agit du 48e film portant à l'écran le personnage créé par Edgar Rice Burroughs, depuis 1918. Alexander Skarsgård est le 21e acteur à interpréter Tarzan au cinéma, tandis que Margot Robbie est la 16e Jane Porter.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <img src="assets/images/movieImages/maxride.jpg" style="width:100%">
+                <div class="carouselText">Angel, lisant au rez-de-chaussée de la maison, entendit des gens dans la forêt (grâce à son pouvoir de télépathie), sortit pour aller voir et se fit capturer par les Erasers. Max, Iggy, Gazzy, Nudge et Fang partent à sa recherche.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/images/movieImages/independence.jpg" style="width:100%">
+                <div class="carouselText">Une immense soucoupe volante envahit le ciel terrestre, libérant un nombre infini de plus petites soucoupes qui prennent position au-dessus des plus grandes villes du monde. Un informaticien new-yorkais décrypte les signaux émanant des
+                    étranges voyageurs.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/images/movieImages/cia.jpg" style="width:100%">
+                <div class="carouselText">Un comptable est projeté malgré lui dans l'univers de l'espionnage international après avoir repris contact avec un ancien ami par Facebook.</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="assets/images/movieImages/iceAge.jpg" style="width:100%">
+                <div class="carouselText">A la fin d'une ère glaciaire, un mammouth flanqué d'un paresseux et d'un tigre à dents de sabre doivent s'occuper d'un bébé humain pour le rendre à ses parents. Mais le tigre est en fait chargé par son clan de récupérer l'enfant, alors
+                    même que la glace commence à fondre, menaçant tous les animaux...</div>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+        </div>
+        <br>
+        <!-- bannerGdroit -->
+        <div class="bannerGdroit">
+            <img width="80" height="80" src="assets/images/img/batmanmovie-2017-comedie.jpg" >
+            <p class="cd">Star Wars</p>
+            <p class="fet">After rescuing Han Solo from the palace of Jabba the Hutt After rescuing Han Solo from the palace of Jabba the Hutt.After rescuing Han Solo from the palace of Jabba the Hutt.</p>
+        </div>
+        <!-- bannerGdroit2 -->
+        <div class="bannerGdroit2">
+            <img width="80" height="80" src="assets/images/img/batmanmovie-2017-comedie.jpg" >
+            <p class="cd2">Star Wars</p>
+            <p class="fet2">After rescuing Han Solo from the palace of Jabba the Hutt After rescuing Han Solo from the palace of Jabba the Hutt.After rescuing Han Solo from the palace of Jabba the Hutt.</p>
+        </div>
+        <!-- bannerGdroit3 -->
+        <div class="bannerGdroit3">
+            <img width="80" height="80" src="assets/images/img/batmanmovie-2017-comedie.jpg" >
+            <p class="cd3">Star Wars</p>
+            <p class="fet3">After rescuing Han Solo from the palace of Jabba the Hutt After rescuing Han Solo from the palace of Jabba the Hutt.After rescuing Han Solo from the palace of Jabba the Hutt.</p>
+        </div>
+        <!-- bannerGdroit4 -->
+        <div class="bannerGdroit4">
+            <img width="80" height="80" src="assets/images/img/batmanmovie-2017-comedie.jpg" >
+            <p class="cd4">Star Wars</p>
+            <p class="fet4">After rescuing Han Solo from the palace of Jabba the Hutt After rescuing Han Solo from the palace of Jabba the Hutt.After rescuing Han Solo from the palace of Jabba the Hutt.</p>
+        </div>
+        <!-- bannerGdroit5 -->
+        <div class="bannerGdroit5">
+            <img width="80" height="80" src="assets/images/img/batmanmovie-2017-comedie.jpg" >
+            <p class="cd5">Star Wars</p>
+            <p class="fet5">After rescuing Han Solo from the palace of Jabba the Hutt After rescuing Han Solo from the palace of Jabba the Hutt.After rescuing Han Solo from the palace of Jabba the Hutt.</p>
+        </div>
+    </div>
+
+    <div class="social">
+        <!-- menu pour réseaux sociaux. Position fixe a gauch; on hover==> long + animation-->
+        <div id="soMedia" class="socialMed">
+            <a href="#FB" id="FaceBook" style="font-family: FontAwesome">Facebook &#xf230;</a>
+            <a href="#Twit" id="Twitter" style="font-family: FontAwesome">Twitter &#xf081;</a>
+            <a href="#Insta" id="Instagram" style="font-family: FontAwesome">Instagram &#xf16d;</a>
+            <a href="#Google" id="Google" style="font-family: FontAwesome">Google+ &#xf0d4;</a>
+        </div>
+
+    </div>
+    <div class="sectionFilms">
+        <div class="new">
+            <div class="movieBox">
+                <img src="assets/images/movieImages/citSoldier.jpg" alt="Citizen Soldier">
+                <p>Citizen Soldier</p>
+            </div>
+            <div class="movieBox">
+                <img src="assets/images/movieImages/greater.jpg" alt="">
+                <p>Greater</p>
+            </div>
+            <div class="movieBox">
+                <img src="assets/images/movieImages/lightBToceans.jpeg" alt="">
+                <p>Light Between Oceans</p>
+            </div>
+            <div class="movieBox">
+                <img src="assets/images/movieImages/bfg.jpg" alt="">
+                <p>The BFG</p>
+            </div>
+            <div class="movieBox">
+                <img src="assets/images/movieImages/xmen.jpg" alt="">
+                <p>X-Men</p>
+            </div>
+        </div>
+        <div id="fm" class="featured">
+            <h2  >FEATURED MOVIES</h2>
+            <ul class="filter">
+                <li>
+                    <button class="filterBtn" type="button" name="tous">Tous</button>
+                </li>
+                <li>
+                    <button class="filterBtn" type="button" name="button">Action</button>
+                </li>
+                <li>
+                    <button class="filterBtn" type="button" name="button">Policier</button>
+                </li>
+            </ul>
+            <div class="visible">
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/spiderMan.jpg" alt="Spider Man">
+                    <p>Spider Man</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/badMoms.jpg" alt="Bad Moms">
+                    <p>Bad Moms</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/bourne.jpg" alt="Jason Bourne">
+                    <p>Jason Bourne</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/darkKnight.jpg" alt="Dark Knight">
+                    <p>The Dark Knight</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/bladeRunner.jpg" alt="Blade Runner 2049">
+                    <p>Blade Runner 2049</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/wonderwoman.jpeg" alt="Wonder Woman">
+                    <p>Wonder Woman</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/justiceLeague.jpg" alt="Justice League">
+                    <p>Justice League</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/ghostShell.jpg" alt="Ghost in the Shell">
+                    <p>Ghost in the Shell</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/foreigner.jpg" alt="The Foreigner">
+                    <p>The Foreigner</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/sicario.jpg" alt="Sicario">
+                    <p>Sicario</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/terminator.jpg" alt="Terminator 2">
+                    <p>Terminator 2</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/jedi.jpg" alt="The Last Jedi">
+                    <p>The Last Jedi</p>
+                </div>
+            </div>
+            <div id="hidden">
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/spiderMan.jpg" alt="Spider Man">
+                    <p>Spider Man</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/badMoms.jpg" alt="Bad Moms">
+                    <p>Bad Moms</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/bourne.jpg" alt="Jason Bourne">
+                    <p>Jason Bourne</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/darkKnight.jpg" alt="Dark Knight">
+                    <p>The Dark Knight</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/bladeRunner.jpg" alt="Blade Runner 2049">
+                    <p>Blade Runner 2049</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/wonderwoman.jpeg" alt="Wonder Woman">
+                    <p>Wonder Woman</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/justiceLeague.jpg" alt="Justice League">
+                    <p>Justice League</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/ghostShell.jpg" alt="Ghost in the Shell">
+                    <p>Ghost in the Shell</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/foreigner.jpg" alt="The Foreigner">
+                    <p>The Foreigner</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/sicario.jpg" alt="Sicario">
+                    <p>Sicario</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/terminator.jpg" alt="Terminator 2">
+                    <p>Terminator 2</p>
+                </div>
+                <div class="movieBox">
+                    <img src="assets/images/movieImages/jedi.jpg" alt="The Last Jedi">
+                    <p>The Last Jedi</p>
+                </div>
+            </div>
+            <input id="plusFilmBtn" class="plusFilms" type="button" name="button" value="Plus de Films"></input>
+        </div>
+
+
+        <div name="st" class="series">
+
+            <div class="featured">
+                <h2>FEATURED SERIES</h2>
+                <ul class="filter">
+                    <li>
+                        <button class="filterBtn" type="button" name="tous">Tous</button>
+                    </li>
+                    <li>
+                        <button class="filterBtn" type="button" name="button">Action</button>
+                    </li>
+                    <li>
+                        <button class="filterBtn" type="button" name="button">Policier</button>
+                    </li>
+                </ul>
+
+                <div class="visible">
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/download.jpeg" alt="Friends">
+                        <p>Friends</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/punisher.jpeg" alt="The Punisher">
+                        <p>The Punisher</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/westworld.jpeg" alt="WestWorld">
+                        <p>Westworld</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/siliconValley.jpeg" alt="Silicon Valley">
+                        <p>Silicon Valley</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/office.jpeg" alt="The Office">
+                        <p>The Office</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/parks.jpg" alt="Parks and Recreation">
+                        <p>Parks and Recreation</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/cage.jpg" alt="Luke Cage">
+                        <p>Luke Cage</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/gameOfThrones.jpg" alt="Game of Thrones">
+                        <p>Game of Thrones</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/wire.jpg" alt="The Wire">
+                        <p>The Wire</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/walkingDead.jpg" alt="The Walking Dead">
+                        <p>The Walking Dead</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/ozark.jpeg" alt="Ozark">
+                        <p>Ozark</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/daredevil.jpg" alt="Daredevil">
+                        <p>Daredevil</p>
+                    </div>
+                </div>
+                <div id="hiddenSeries">
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/download.jpeg" alt="Friends">
+                        <p>Friends</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/punisher.jpeg" alt="The Punisher">
+                        <p>The Punisher</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/westworld.jpeg" alt="WestWorld">
+                        <p>Westworld</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/siliconValley.jpeg" alt="Silicon Valley">
+                        <p>Silicon Valley</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/office.jpeg" alt="The Office">
+                        <p>The Office</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/parks.jpg" alt="Parks and Recreation">
+                        <p>Parks and Recreation</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/cage.jpg" alt="Luke Cage">
+                        <p>Luke Cage</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/gameOfThrones.jpg" alt="Game of Thrones">
+                        <p>Game of Thrones</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/wire.jpg" alt="The Wire">
+                        <p>The Wire</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/walkingDead.jpg" alt="The Walking Dead">
+                        <p>The Walking Dead</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/ozark.jpeg" alt="Ozark">
+                        <p>Ozark</p>
+                    </div>
+                    <div class="movieBox">
+                        <img src="assets/images/movieImages/daredevil.jpg" alt="Daredevil">
+                        <p>Daredevil</p>
+                    </div>
+                </div>
+                <input id="plusSeriesBtn" class="plusSeries" type="button" name="button" value="Plus de Series" onclick="changeSeries()"></input>
+            </div>
+
+        </div>
+    </div>
+    <!-- shop -->
+    <div class="shop">
+
+        <!-- caroussel 7 films avec trailers  -->
+        <!-- titreBefore2 -->
+        <h2 name="ss" class="titreBefore2">SHOP MOVIES</h2>
+        <!-- bgv -->
+        <div class="bgv">
+            <!-- blockPN -->
+            <div id="blockPN">
+                <p id="pv">
+                    <</p>
+                        <p id="nt">></p>
+            </div>
+            <!-- flex-container -->
+            <div class="flex-container">
+                <!-- video -->
+                <div style="flex-grow: 6">
+                    <iframe width="660px" height="300px" src="https://www.youtube.com/embed/PHLN6rhLqRc" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <div style="flex-grow: 6">
+                    <!-- captain -->
+                    <div id="captain">
+                        <h4>CAPTAIN AMERICA CIVIL WAR</h4>
+                    </div>
+
+                    <!-- blocDescrip -->
+                    <div id="blocDescrip">
+                        <div id="colonne1">Résumé</div>
+                        <div id="colonne2"><span>: </span>Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur</div>
+                    </div>
+                    <!-- blocDescrip2 -->
+                    <div id="blocDescrip2">
+                        <div id="colonne1">désumé</div>
+                        <div id="colonne2"><span>: </span>Lorem ipsum</div>
+                    </div>
+                    <!-- blocDescrip3 -->
+                    <div id="blocDescrip3">
+                        <div id="colonne1">mohsdé</div>
+                        <div id="colonne2"><span>: </span>Lorem ipsum</div>
+                    </div>
+                    <!-- blocDescrip4 -->
+                    <div id="blocDescrip4">
+                        <div id="colonne1">Prix</div>
+                        <div id="colonne2"><span>: </span>35 €</div>
+                    </div>
+                </div>
+                <!-- galerie -->
+                <main class="gal1">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+                <main class="gal2">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+                <main class="gal3">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+                <main class="gal4">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+                <main class="gal5">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+                <main class="gal6">
+                        <!-- CAPTAIN AMERICA -->
+                        <img src="assets/images/img/batmanmovie-2017-comedie.jpg">
+                        <h4>CAPTAIN AMERICA</h4>
+    				    <p>2016</p>
+                	    <span class="right price">35 €</span>
+                </main>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact">
+        <!-- on clock ==> afficher info
+        !!! BONUS ==> inclure carte style google maps -->
+        <!-- titreBefore -->
+        <h2 name="cu" class="titreBefore">CONTACT US</h2>
+        <!-- bloc -->
+        <div class="toutbloc">
+            <div class="bloc">
+                <h3>Address</h3>
+                <div class="pla">
+                    <img src="assets/images/img/006-placeholder.png" alt="icones">
+                </div>
+            </div>
+            <div class="bloc2">
+                <h3>Call</h3>
+                <div class="pla2">
+                    <img src="assets/images/img/004-circle.png" alt="icones">
+                </div>
+                <ul>
+                    <li>+1873682656</li>
+                    <li>+1873682656</li>
+                    <li>+1873682656</li>
+                </ul>
+            </div>
+            <div class="bloc3">
+                <h3>Email</h3>
+                <div class="pla3">
+                    <img src="assets/images/img/005-envelope.png" alt="icones">
+                </div>
+                <ul>
+                    <li>example1@gmail.com</li>
+                    <li>example2@gmail.com</li>
+                    <li>example3@gmail.com</li>
+                </ul>
+            </div>
+            <div class="bloc4">
+                <h3>Social Media</h3>
+                <div class="pla4">
+                    <img src="assets/images/img/007-user.png" alt="icones">
+                </div>
+                <ul>
+                    <li>
+                        <div class="rectangle">
+                            <img src="assets/images/img/003-facebook.png" alt="logo">
+                            <a href="#fbfbfb">Facebook</a>
+                            <br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rectangle2">
+                            <img src="assets/images/img/002-twitter.png" alt="logo">
+                            <a href="#ttww">Twitter</a>
+                            <br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="rectangle3">
+                            <img src="assets/images/img/001-google-plus.png" alt="logo">
+                            <a href="#ggll">Google+</a>
+                            <br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- formulair -->
+        <div class="formulair">
+            <form action="core/request.php" method="POST">
+                <input class="non" type="text" placeholder="FIRST NAME" />
+                <input class="prenon" type="text" placeholder="LAST NAME" />
+                <br/>
+                <input class="email" type="email" placeholder="EMAIL" />
+                <input class="info" type="text" placeholder="SUBJECT" />
+                <br/>
+                <textarea placeholder="YOUR MESSAGE"></textarea>
+                <br/>
+                <input class="submit" type="submit" placeholder="SEND MESSAGE" />
+            </form>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <h1>SUBSRIBE TO US</h1>
+        <img src="assets/images/img/logoMovies.png" alt="logo">
+        <div class="sub">
+            <div class="gh"><a>Your email</a>
+            </div>
+            <div class="gh2"><a>send</a>
+            </div>
+        </div>
+        <div class="separation">
+            <p></p>
+        </div>
+        <!-- © -->
+        <p>© 2017 One Movies. All rights reserved | Design by
+            < Becode>
+        </p>
+        <!-- footer lient -->
+        <ul>
+            <li><a href="#az">MOVIES</a>
+            </li>
+            <li><a href="#qs">FAQ</a>
+            </li>
+            <li><a href="#wx">ACTION</a>
+            </li>
+            <li><a href="#rt">ADVENTURE</a>
+            </li>
+            <li><a href="#fg">COMEDY</a>
+            </li>
+            <li><a href="#vb">ICONS</a>
+            </li>
+            <li><a href="#jk">CONTACT US</a>
+            </li>
+        </ul>
+        <div  class="clicretour">
+            <!-- ancrage html -->
+            <a href="#top"><img src="assets/images/img//up-arrow.png" alt="boutonterour"></a>
+            <!-- <p></p> -->
+
+        </div>
+    </div>
+    <!-- ancrage html -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <!--  -->
+    <script src="app.js"></script>
+</body>
+
+</html>
